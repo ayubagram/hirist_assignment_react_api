@@ -1,0 +1,63 @@
+@import './css/color';
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;  
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .5px;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: $padding;
+}
+
+a {
+  cursor: pointer;
+  color: #000;
+  font-size: 13px;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* App */
+section {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .wrapper {
+    position: relative;
+    .share__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      bottom: -15px;
+    }
+  }
+  .loader {
+    height: calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgColor;
+    font-size: 13px;
+    color: white;
+  }
+}
+
+// scrollbar
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: white; }
+::-webkit-scrollbar-thumb { background: $primary; }
+::-webkit-scrollbar-thumb:hover { background: $primary; }

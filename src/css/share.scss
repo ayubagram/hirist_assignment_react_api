@@ -1,0 +1,12 @@
+@import 'color';
+.share__btn {
+  border: .5px solid $primary;
+  padding: 8px 20px;  
+  border-radius: 4px;
+  overflow: hidden;
+  color: $primary;
+  background-color: white;
+  box-shadow: 0 1px 5px 0 $boxShdow;
+  text-transform: capitalize;
+  span { margin-left: 8px; }
+}
